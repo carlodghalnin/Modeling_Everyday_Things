@@ -1,3 +1,6 @@
+#Baseball flight simulation based on page 109 of 
+#"Modeling and Simulation of Everyday Things" by Michael Roth.
+
 from math import pi, cos, sin, sqrt
 
 def baseball_flight(nstepmax=100000,
@@ -79,7 +82,7 @@ def baseball_flight(nstepmax=100000,
             with open('baseball.txt','a') as log:
                 log.write(f'Final time {time}s. \n')
                 log.write(f'Final position {x,y,z}m. \n')
-                log.write(f'Final velocity {vx,vy,vz}m. \n')
+                log.write(f'Final velocity {vx,vy,vz}m/s. \n')
             break
 
     return None
